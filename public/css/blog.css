@@ -1,0 +1,95 @@
+/* 
+
+1. los ultimos estilos tendran más prioridad que los primeros 
+
+2. El selector universal (*) solo aplicara los estilos si no han sido definidos con anterioridad,
+por ende para este no aplica la primera regla. 
+
+# para id
+. para class
+
+Manejo de colores
+
+-#ff0000
+-#000
+-rgb(0, 255, 0)
+
+Caracteristicas de CSS:
+
+https://i.emezeta.com/weblog/css3-cheatsheet/css3-cheatsheet-2017-emezeta.pdf
+
+*/
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #efefef;
+}
+
+header {
+    background-color: #2557e0ef;
+    color: #fff;
+    padding: 3rem 2rem;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.container{
+    width: 400px;
+    margin: 0 auto;
+}
+
+article img {
+    height: 400px;
+    width: 400px;
+}
+
+section article {
+    transition: box-shadow 0.2s ease;
+    background-color: #fff;
+    margin: 2rem 0 ;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0rem;
+}
+
+section article:hover {
+    box-shadow: 0 0.1rem 0.4rem #8b8a8a;
+}
+
+section article h2, section article p {
+    padding: 0rem 0.8rem;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.897);
+    padding: 2rem;
+    color:rgb(255, 255, 255);
+}
+
+footer div {
+    float: right;
+}
+
+footer a {
+    transition: color 0.3s ease;
+    color: #2557e0ef;
+    text-decoration: none;
+    line-height: 35px;
+    border: 1px solid #2557e0ef;
+    border-radius:0.5rem;
+    padding: 0.3rem;
+}
+
+footer a:hover {
+    color: #fff;
+}
+
+footer p {
+    margin-top: 30px;
+}
